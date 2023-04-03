@@ -1,0 +1,211 @@
+p {                            /*cambia el formato de todos los párrafos*/
+    font-size: large;
+    
+    font-family: serif;
+    
+    /*texto responsive según ancho de ventana (vw) y*/
+    font-size: 1.5vw;
+}
+
+blockquote{                   /*cambia el formato de las opciones del menú*/
+    margin-left: 10%;
+    font-size: large;
+    
+    /*texto responsive según ancho de ventana (vw) y*/
+    font-size: 1.5vw;
+    
+    
+}
+
+li{                       /*da formato a las viñetas*/
+    font-size: large;
+    font-family: serif;
+    
+    /*texto responsive según ancho de ventana (vw) y*/
+    font-size: 1.5vw;
+    
+    
+}
+
+
+.cabecera {      /*aquí está el nombre y la foto*/
+    text-align: center;     /*para centrarlo */
+    
+    /*texto responsive según ancho de ventana (vw) y*/
+    font-size: 2vw;
+       
+}
+
+.cabecera img{      /*características de la imagen de la cabecera*/
+    border-radius: 100px;            /*poner borde redondeado*/
+    position: relative; top:-90px;   /*posiciona la imagen 90px hacia arriba*/
+}
+
+
+/* propiedades de mi nombre*/
+.titulo1 {
+    width: 90%;         /*ancho*/
+    height: 1000%;       /*alto*/
+    margin-left: 3%;      /*margen izquierdo desde pantalla*/
+    border-radius: 100px; /*poner borde redondeado*/
+    /*background-color: antiquewhite;*/
+    padding: 50px 30px 120px 30px; /* espacio entre borde y texto, no poder espacio entre el número y px*/
+    
+    /* establezco degradados para el título.  Depende del navegador webkit=chrome, moz=mozilla, ms=explorer, o=opera*/
+    background: -webkit-linear-gradient(top right, #d8a5ee, #e8c167);
+    background: -moz-linear-gradient(top right, #d8a5ee, #e8c167);
+    background: -o-linear-gradient(top right, #d8a5ee, #e8c167);
+    background: -ms-linear-gradient(top right, #d8a5ee, #e8c167);
+}
+
+
+.foto {
+    border:solid;
+    height: 1px;    /*borde sólido con 1px de alto que da apariencia de doble línea*/
+}
+
+.lateral {
+    /*abarca navegador y contactos*/
+    width: 17%;
+    float: left;        /*para que el texto se ajuste alrededor*/
+    
+}
+/*características del menú lateral*/
+.navegador {
+    width: 100%; /*Es el 100% de lo aplicado a lateral porque está dentro*/
+    
+    border-radius: 20px; /*poner borde redondeado*/
+    padding: 20px 0px 20px 0px;  /*espacio entre borde y texto*/
+    /* establezco degradados para el menú.  Depende del navegador webkit=chrome, moz=mozilla, ms=explorer, o=opera*/
+    background: -webkit-linear-gradient(top right, #d8a5ee, #b9eaef);
+    background: -moz-linear-gradient(top right, #d8a5ee, #b9eaef);
+    background: -o-linear-gradient(top right, #d8a5ee, #b9eaef);
+    background: -ms-linear-gradient(top right, #d8a5ee, #b9eaef);
+}
+
+/*pone en negrita las opciones del menú al pasar el ratón por encima*/
+blockquote:hover{
+    color:aqua strong;
+    font-weight: bold;
+}
+
+/*iconos de contacto*/
+.contacto {
+    
+    width: 80%;
+    height: 1200%;
+    text-align: center;  /*centrado*/
+    margin-left: 10%;  /*pone margen izquierdo con porcentaje para ser responsive*/
+    border-radius: 100px; /*poner borde redondeado*/
+    background-color: #d6bcf9;
+    /* establezco degradados para contactos.  Depende del navegador webkit=chrome, moz=mozilla, ms=explorer, o=opera
+     * 
+     * los colores salen en formato rgba cuando se pone transparencia*/
+    background: -webkit-linear-gradient(top right, #d8a5ee, rgba(235, 251, 140, 0.94));
+    background: -moz-linear-gradient(top right, #d8a5ee, rgba(235, 251, 140, 0.94));
+    background: -o-linear-gradient(top right, #d8a5ee, rgba(235, 251, 140, 0.94));
+    background: -ms-linear-gradient(top right, #d8a5ee, rgba(235, 251, 140, 0.94));
+    
+    padding: 50px 0px 60px 0px; /* espacio entre borde y texto*/
+}
+
+/*cambios en los iconos al pasar el ratón por encima de las "a" de la seccion "contacto"*/
+.contacto a:hover {       /* hover es una subclase que cambia al pasar el cursor por encima*/
+    padding: 40% 20% 5% 20%;  /* espacio entre borde y texto*/
+    border-radius: 10px; /*poner borde redondeado*/
+    background-color: rgb(239, 235, 244);
+    
+}
+
+/*texto central, todas las secciones*/
+.central{   
+    margin-left: 20%; /*para que el relleno comience tras el lateral*/
+      
+}
+
+.central p{
+     text-indent: 3%;  /*sangría de primera línea a los párrafos centrales*/
+    
+}
+
+
+.presentacion {
+    background-color: rgba(212, 108, 202, 0.14);
+    text-align: justify;
+        border-radius: 30px 50px 10px 10px; /*poner borde redondeado*/
+        padding: 20px 20px 5px 20px;  /*separación entre borde y letra*/
+}
+
+.quiensoy {
+    background-color: rgba(207, 56, 138, 0.19);
+    text-align: justify;
+    border-radius: 10px 10px 30px 30px; /*poner borde redondeado*/
+    padding: 5px 20px 20px 20px;  /*separación entre borde y letra*/
+}
+
+.quehago {
+    background-color: rgba(222, 225, 247, 0.31); /*primero código Hexad y luego clicar para transparencia*/
+    text-align: justify;
+    border-radius: 50px 30px 10px 10px; /*poner borde redondeado*/
+    padding: 20px 20px 5px 20px;  /*separación entre borde y letra*/
+}
+
+.experiencia {
+    background-color: rgba(210, 214, 242, 0.44);
+    text-align: justify;
+    border-radius: 10px 10px 30px 30px; /*poner borde redondeado*/
+    padding: 5px 20px 20px 20px;  /*separación entre borde y letra*/
+}
+/*pone en negrita los links al pasar el ratón por encima*/
+.experiencia a:hover{
+    font-weight: bold;
+}
+
+.conocimientos {
+    background-color: rgba(249, 247, 203, 0.69);
+    text-align: justify;
+    border-radius: 30px 50px 10px 10px; /*poner borde redondeado*/
+    padding: 20px 20px 5px 20px;  /*separación entre borde y letra*/
+}
+
+.habilidades {
+    background-color: #F9F7CB;
+    text-align: justify;
+    border-radius: 10px 10px 50px 50px; /*poner borde redondeado*/
+    padding: 5px 20px 20px 20px;  /*separación entre borde y letra*/
+}
+
+.interlineadosimple{
+    line-height: 25%;  /*establece una separación de línea a un 25% de la letra*/
+}
+
+.interlineadodoble{
+    line-height: 200%;   /*establece una separación de línea al 200% de la letra*/
+}
+
+footer {
+    border:solid;
+    height: 1px;    /*borde sólido con 1px de alto que da apariencia de doble línea*/
+    text-align: center;
+    
+    /*texto responsive según ancho de ventana (vw) y*/
+    font-size: 1.5vw;
+}
+
+/*pone en negrita los links al pasar el ratón por encima*/
+footer a:hover{
+    font-weight: bold;
+}
+
+/*flecha de pie de página para volver arriba*/
+.brilloflecha img{      /*características de la imagen de la cabecera*/
+    border-radius: 100px;            /*poner borde redondeado*/
+    position: relative; top:-5vw;   /*posiciona la imagen 5ew hacia arriba, es responsive, por eso el uso de ew*/
+    opacity: 0%;   /*opacidad 0 la hace invisible*/
+}
+
+.brilloflecha img:hover{
+    opacity: 100%;   /*al pasar el ratón la pongo opacidad 100 para que se vea*/
+    
+}
+
